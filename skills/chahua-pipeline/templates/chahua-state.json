@@ -1,0 +1,29 @@
+{
+  "run_id": "",
+  "date": "",
+  "stage": "select",
+  "source_image": "",
+  "source_url": "",
+  "search_directions": [],
+  "selection_score": {
+    "scene_fit": 0,
+    "craft_reconstructability": 0,
+    "narrative_mood": 0,
+    "color_identity": 0,
+    "focus_whitespace": 0,
+    "quality_downloadability": 0,
+    "total": 0
+  },
+  "poster_chat_created": false,
+  "poster_first_generation_done": false,
+  "poster_final_image": "",
+  "xiaohongshu_text_file": "",
+  "video_input_image": "",
+  "video_downloaded_file": "",
+  "qa": {
+    "poster_pass": false,
+    "video_pass": false,
+    "notes": []
+  },
+  "last_error": ""
+}
