@@ -16,6 +16,10 @@ if (-not (Test-Path $stateFile)) {
         run_id = ''
         date = ''
         stage = 'select'
+        speed_profile = 'FAST'
+        max_items = 1
+        video_stop_after_download = $true
+        auto_retry_quality = $false
         source_image = ''
         source_url = ''
         search_directions = @()
@@ -28,23 +32,17 @@ if (-not (Test-Path $stateFile)) {
             quality_downloadability = 0
             total = 0
         }
-        poster_chat_created = $false
-        poster_first_generation_done = $false
         poster_final_image = ''
         xiaohongshu_text_file = ''
         video_input_image = ''
         video_downloaded_file = ''
-        qa = [ordered]@{
-            poster_pass = $false
-            video_pass = $false
-            notes = @()
-        }
         last_error = ''
     }
     $state | ConvertTo-Json -Depth 8 | Set-Content -Path $stateFile -Encoding UTF8
 }
 
 Write-Output "READY"
+Write-Output "PROFILE=FAST"
 Write-Output "INPUT=$inputDir"
 Write-Output "OUTPUT=$outputDir"
 Write-Output "VIDEO=$videoDir"
